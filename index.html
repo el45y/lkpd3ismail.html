@@ -1,258 +1,144 @@
-<!DOCTYPE html>
-<html lang="id">
+            <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jelajah Wisata Indonesia</title>
-
+    <title>jelajah wisata indonesia</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
+            font-family:arial,sans-serif;
             margin: 0;
-            font-family: Georgia, serif;
-            background-color: #f5f5f5;
-            text-align: center;
+            text-align:center;
+            background-color:white;
         }
-
-        .container {
-            width: 75%;
-            margin: auto;
-            background-color: white;
+        header{
+            background-color:#20c4c9;
+            padding:20px;
         }
-
-        /* HEADER */
-        header {
-            background-color: #20c3c8;
-            padding: 20px;
-        }
-
         header h1 {
             margin: 0;
-            font-size: 24px;
         }
-
-        header p {
-            margin-top: 15px;
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-        /* MENU */
         nav {
-            display: flex;
-            justify-content: space-around;
-            background-color: #eee6d9;
-            padding: 5px;
+            background-color:#f1e5d0;
+            padding:8px
         }
-
         nav a {
-            text-decoration: none;
-            color: black;
-            font-size: 14px;
+            text-decoration:none;
+            color:black;
+            margin:0 100px
+            font-weight: bold;
         }
-
-        /* SECTION */
         section {
-            padding: 20px;
-            border-bottom: 1px solid #ccc;
+            padding:20px;
+            border-bottom:1px solid #acc;
         }
-
-        h2 {
-            font-size: 20px;
+        .wisata{
+            display:flex;
+            justfy-content:center;
+            gap:20px;
         }
-
-        p {
-            font-size: 14px;
-            line-height: 1.8;
+        .card{
+            width:30%;
         }
-
-        /* WISATA */
-        .wisata {
-            display: flex;
-            justify-content: space-between;
-            gap: 15px;
-            margin-top: 20px;
+        .card img{
+            width: 400px;%;
+            heigtht: 350px;px;
         }
-
-        .card {
-            width: 33%;
+        audio, vidio{
+            margin-top: 25px;
         }
-
-        .card img {
-            width: 100%;
-            height: 170px;
-            object-fit: cover;
-        }
-
-        .card h3 {
-            font-size: 14px;
-        }
-
-        .card p {
-            font-size: 12px;
-        }
-
-        /* AUDIO */
-        audio {
-            width: 250px;
-        }
-
-        /* VIDEO */
-        video {
-            width: 350px;
-            max-width: 100%;
-        }
-
-        /* FOOTER */
-        footer {
+        footer{
             padding: 20px;
             font-size: 12px;
         }
 
-        @media screen and (max-width: 700px) {
-            .container {
-                width: 95%;
-            }
-
-            .wisata {
-                flex-direction: column;
-            }
-
-            .card {
-                width: 100%;
-            }
-        }
     </style>
 </head>
 
 <body>
 
-<div class="container">
-
-    <!-- HEADER -->
+    <!--HEADER-->
     <header>
         <h1>JELAJAH WISATA INDONESIA</h1>
-        <p>Temukan Keindahan Alam dan Budaya Indonesia</p>
+        <P><B>Temukan Keindahan Alam dan budaya indonesia</B></P>
     </header>
 
-    <!-- MENU -->
+    <!--MENU-->
     <nav>
         <a href="#beranda">Beranda</a>
-        <a href="#wisata">Wisata</a>
-        <a href="#galeri">Galeri</a>
+        <a href="#Wisata">Wisata</a>
+        <a href="galeri">Galeri</a>
     </nav>
 
-    <!-- BERANDA -->
+    <!--BERANDA-->
     <section id="beranda">
-        <h2>🏠 Beranda</h2>
-
+        <h2></h2>
         <p>
-            Selamat datang di website Jelajah Wisata Indonesia.
-            Berisi informasi mengenai beberapa tempat wisata menarik
-            yang ada di Indonesia.
+            selamat datang di website jelajah wisata indonesia website ini berisi informasi mengenai beberapa tempat wisata
+            menarik yang ada di indonesia
         </p>
 
         <p>
-            Indonesia memiliki banyak sekali destinasi wisata,
-            mulai dari pegunungan, pantai, laut, hingga wisata budaya.
+            indonesia memiliki banyak sekali destinasi wisata mulai dari
+            pegunungan,pantai,danau,hingga wisata budaya.
         </p>
     </section>
 
-    <!-- DESTINASI -->
+    <!--WISATA-->
     <section id="wisata">
+        <h2>Destinasi wisata</h2>
+        <p> Berikut adalah objek wisata menarik di jawa timur.</p>
+        <div  class="wisata">
+        <div class="card"><img src="Pemandangan_Gunung_Bromo.jpg.">
+            <h4>Gunung Bromo</h4>
+            <p>
+                Gunung bromo merupakan salah satu tempat wisata
+                terkenal yang berada di jawa timur.
+            </p>
+        </div>
 
-        <h2>🏞️ Destinasi Wisata</h2>
-
-        <p>Berikut adalah objek wisata menarik di Jawa Timur.</p>
-
-        <div class="wisata">
-
-            <!-- BROMO -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1589308078054-832f8ebf3f6c?auto=format&fit=crop&w=800&q=80"
-                     alt="Gunung Bromo">
-
-                <h3>Gunung Bromo</h3>
-
-                <p>
-                    Gunung Bromo merupakan salah satu tempat wisata
-                    terkenal yang berada di Jawa Timur.
-                </p>
-            </div>
-
-            <!-- IJEN -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1563409236349-20c5d6d0e5f4?auto=format&fit=crop&w=800&q=80"
-                     alt="Kawah Ijen">
-
-                <h3>Kawah Ijen</h3>
-
-                <p>
-                    Kawah Ijen merupakan salah satu tempat wisata
-                    terkenal yang berada di Jawa Timur.
-                </p>
-            </div>
-
-            <!-- AIR TERJUN -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=800&q=80"
-                     alt="Air Terjun">
-
-                <h3>Air Terjun Coban Rondo</h3>
-
-                <p>
-                    Air Terjun Coban Rondo merupakan salah satu
-                    tempat wisata terkenal yang berada di Jawa Timur.
-                </p>
-            </div>
-
+        <div class="card">
+            <img src="kawah ijen.jpg">
+            <h4>Kawah ijen</h4>
+            <p>
+                Kawah ijen merupakan salah satu tempat wisata
+                yang terkenal di jawa timur.
+            </p>
+        </div>
+        <div class="card">
+            <img src=Air_Terjun_Coban_Rondo.jpg>
+            <h4>Air terjun coban rondo</h4>
+            <p>
+                Air terjun coban rondo merupakan salah satu tempat 
+                wisata terkenal yang berada di jawa timur.
+            </p>
         </div>
 
     </section>
-
-    <!-- MUSIK -->
+    <!--AUDIO-->
     <section>
-
-        <h2>🎵 Musik Nusantara</h2>
-
+        <h2>musik nusantara</h2>
         <p>
-            Silakan dengarkan musik berikut sambil menikmati
-            informasi wisata Indonesia.
+            Silahkan dengarkan musik berikut sambil menikmati informasi
+            wisata indonesia.
         </p>
-
         <audio controls>
-            <source src="musik.mp3" type="audio/mpeg">
-            Browser Anda tidak mendukung audio.
+            <source src="ssstik.io_1788141381156.mp3"type="audio/mpeg">
         </audio>
-
     </section>
-
-    <!-- VIDEO -->
+    <!--VIDEO-->
     <section id="galeri">
-
-        <h2>🎶 Wonderland Indonesia</h2>
-
+        <h2> Wonderland indonesia</h2>
         <p>
-            Silakan melihat video berikut sambil menikmati
-            informasi wisata Indonesia.
+            Silahkan melihat video berikut sambil menikmati informasi
+            wisata indonesia
         </p>
-
-        <video controls>
-            <source src="video.mp4" type="video/mp4">
-            Browser Anda tidak mendukung video.
+        <br>
+        <video width="300" controls>
+            <source src="ssstik.io_@beautyofidn_1788750244460.mp4" type="video/mp4">
         </video>
-
     </section>
-
-    <!-- FOOTER -->
+    <!--FOOTER-->
     <footer>
-        Contact Person: Muhammad Ismail Wahyudi | Kelas X
+        <b>contact person: M.ISMAIL WAHYUDI</b>
     </footer>
-
-</div>
-
 </body>
 </html>
