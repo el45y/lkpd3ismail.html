@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajah Wisata Indonesia</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .container {
+            width: 75%;
+            margin: auto;
+            background-color: white;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #20c3c8;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header p {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* MENU */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #eee6d9;
+            padding: 5px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+
+        /* SECTION */
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        /* WISATA */
+        .wisata {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 33%;
+        }
+
+        .card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 14px;
+        }
+
+        .card p {
+            font-size: 12px;
+        }
+
+        /* AUDIO */
+        audio {
+            width: 250px;
+        }
+
+        /* VIDEO */
+        video {
+            width: 350px;
+            max-width: 100%;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 20px;
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .container {
+                width: 95%;
+            }
+
+            .wisata {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+        <h1>JELAJAH WISATA INDONESIA</h1>
+        <p>Temukan Keindahan Alam dan Budaya Indonesia</p>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#wisata">Wisata</a>
+        <a href="#galeri">Galeri</a>
+    </nav>
+
+    <!-- BERANDA -->
+    <section id="beranda">
+        <h2>🏠 Beranda</h2>
+
+        <p>
+            Selamat datang di website Jelajah Wisata Indonesia.
+            Berisi informasi mengenai beberapa tempat wisata menarik
+            yang ada di Indonesia.
+        </p>
+
+        <p>
+            Indonesia memiliki banyak sekali destinasi wisata,
+            mulai dari pegunungan, pantai, laut, hingga wisata budaya.
+        </p>
+    </section>
+
+    <!-- DESTINASI -->
+    <section id="wisata">
+
+        <h2>🏞️ Destinasi Wisata</h2>
+
+        <p>Berikut adalah objek wisata menarik di Jawa Timur.</p>
+
+        <div class="wisata">
+
+            <!-- BROMO -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1589308078054-832f8ebf3f6c?auto=format&fit=crop&w=800&q=80"
+                     alt="Gunung Bromo">
+
+                <h3>Gunung Bromo</h3>
+
+                <p>
+                    Gunung Bromo merupakan salah satu tempat wisata
+                    terkenal yang berada di Jawa Timur.
+                </p>
+            </div>
+
+            <!-- IJEN -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1563409236349-20c5d6d0e5f4?auto=format&fit=crop&w=800&q=80"
+                     alt="Kawah Ijen">
+
+                <h3>Kawah Ijen</h3>
+
+                <p>
+                    Kawah Ijen merupakan salah satu tempat wisata
+                    terkenal yang berada di Jawa Timur.
+                </p>
+            </div>
+
+            <!-- AIR TERJUN -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=800&q=80"
+                     alt="Air Terjun">
+
+                <h3>Air Terjun Coban Rondo</h3>
+
+                <p>
+                    Air Terjun Coban Rondo merupakan salah satu
+                    tempat wisata terkenal yang berada di Jawa Timur.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MUSIK -->
+    <section>
+
+        <h2>🎵 Musik Nusantara</h2>
+
+        <p>
+            Silakan dengarkan musik berikut sambil menikmati
+            informasi wisata Indonesia.
+        </p>
+
+        <audio controls>
+            <source src="musik.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung audio.
+        </audio>
+
+    </section>
+
+    <!-- VIDEO -->
+    <section id="galeri">
+
+        <h2>🎶 Wonderland Indonesia</h2>
+
+        <p>
+            Silakan melihat video berikut sambil menikmati
+            informasi wisata Indonesia.
+        </p>
+
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video.
+        </video>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        Contact Person: Muhammad Ismail Wahyudi | Kelas X
+    </footer>
+
+</div>
+
+</body>
+</html>
